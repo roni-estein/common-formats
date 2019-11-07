@@ -1,0 +1,30 @@
+{
+  "name": "roni-estein/common-formats",
+  "description": "A set of common formats used across projects.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Roni Estein",
+      "email": "roni.estein@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "CommonFormats\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.0.1-dev"
+    },
+    "laravel": {
+      "providers": [
+        "CommonFormats\\ServiceProvider"
+      ]
+    }
+  }
+}
