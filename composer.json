@@ -1,5 +1,6 @@
 {
   "name": "roni-estein/common-formats",
+  "version": "0.0.2",
   "description": "A set of common formats used across projects.",
   "type": "library",
   "license": "MIT",
@@ -10,7 +11,7 @@
     }
   ],
   "require": {
-    "php": "^7.2"
+    "php": "^7.3"
   },
   "autoload": {
     "psr-4": {
@@ -19,7 +20,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "0.0.1-dev"
+      "dev-master": "0.0.2"
     },
     "laravel": {
       "providers": [
