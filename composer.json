@@ -1,6 +1,6 @@
 {
   "name": "roni-estein/common-formats",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A set of common formats used across projects.",
   "type": "library",
   "license": "MIT",
@@ -19,9 +19,6 @@
     }
   },
   "extra": {
-    "branch-alias": {
-      "dev-master": "0.0.2"
-    },
     "laravel": {
       "providers": [
         "CommonFormats\\ServiceProvider"
