@@ -1,6 +1,5 @@
 {
   "name": "roni-estein/common-formats",
-  "version": "0.0.3",
   "description": "A set of common formats used across projects.",
   "type": "library",
   "license": "MIT",
