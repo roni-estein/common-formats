@@ -3,6 +3,7 @@
 namespace CommonFormats;
 
 use Illuminate\Support\Facades\Blade;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 include_once('formats/phone.php');
@@ -10,6 +11,10 @@ include_once('formats/phone.php');
 class ServiceProvider extends BaseServiceProvider {
 
 	public function boot(){
+
+        Validator::extend('phone', 'CommonFormats\\Rules\Phone@passes');
+        Validator::extend('province_abbr', 'CommonFormats\\Rules\ProvinceAbbr@passes');
+        Validator::extend('postal_code', 'CommonFormats\\Rules\Postalcode@passes');
         
         Blade::directive('checked', function($expression) {
             $items = DirectivesRepository::parseMultipleArgs($expression);
